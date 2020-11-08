@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.8.2 on linux)" generated="20200930 13:51:22.430" rpa="false">
+<suite id="s1" name="Test" source="/home/salehin/Desktop/testLibrary/test.robot">
+<test id="s1-t1" name="Example of calling a python Function">
+<kw name="Create Folder" library="osLibrary">
+<status status="PASS" starttime="20200930 13:51:22.452" endtime="20200930 13:51:22.452"></status>
+</kw>
+<kw name="Create Subfolder" library="osLibrary">
+<status status="PASS" starttime="20200930 13:51:22.453" endtime="20200930 13:51:22.453"></status>
+</kw>
+<kw name="make folder with folderName">
+<arguments>
+<arg>noName</arg>
+</arguments>
+<kw name="Create FolderWithName" library="osLibrary">
+<arguments>
+<arg>${fname}</arg>
+</arguments>
+<status status="PASS" starttime="20200930 13:51:22.453" endtime="20200930 13:51:22.454"></status>
+</kw>
+<status status="PASS" starttime="20200930 13:51:22.453" endtime="20200930 13:51:22.454"></status>
+</kw>
+<kw name="Create FullName" library="osLibrary">
+<arguments>
+<arg>Salehin</arg>
+<arg>Ashik</arg>
+</arguments>
+<assign>
+<var>${preparedName}</var>
+</assign>
+<msg timestamp="20200930 13:51:22.454" level="INFO">${preparedName} = Salehin Ashik</msg>
+<status status="PASS" starttime="20200930 13:51:22.454" endtime="20200930 13:51:22.454"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${preparedName}</arg>
+</arguments>
+<msg timestamp="20200930 13:51:22.455" level="INFO">Salehin Ashik</msg>
+<status status="PASS" starttime="20200930 13:51:22.454" endtime="20200930 13:51:22.455"></status>
+</kw>
+<kw name="make folder with folderName">
+<arguments>
+<arg>${preparedName}</arg>
+</arguments>
+<kw name="Create FolderWithName" library="osLibrary">
+<arguments>
+<arg>${fname}</arg>
+</arguments>
+<status status="PASS" starttime="20200930 13:51:22.455" endtime="20200930 13:51:22.455"></status>
+</kw>
+<status status="PASS" starttime="20200930 13:51:22.455" endtime="20200930 13:51:22.455"></status>
+</kw>
+<status status="PASS" starttime="20200930 13:51:22.452" endtime="20200930 13:51:22.456" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20200930 13:51:22.431" endtime="20200930 13:51:22.456"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="Test">Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
